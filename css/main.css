@@ -484,48 +484,22 @@ main .moon-image {
 }
 
 .gallery-container {
+  width: 100%;
+}
+
+.gallery-container .galleryWrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  background-image: url("../images/servicesImg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #5bccf6;
-  background-blend-mode: soft-light;
+  grid-column-gap: 100px;
+  grid-row-gap: 30px;
 }
 
-.gallery-container .gallery-wrapper {
-  text-align: center;
-  -webkit-box-shadow: 3px 3px 3px #030e12;
-          box-shadow: 3px 3px 3px #030e12;
-  border-top: 3px black solid;
-  border-left: 3px black solid;
-  padding: 30px;
-}
-
-.gallery-container .gallery-image {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  outline: 3px #EB52DF solid;
-}
-
-.gallery-container .gallery-name {
-  color: #FFFFFF;
-  text-shadow: 2px 2px 2px #030e12;
-  padding: 10px;
-}
-
-.gallery-container .gallery-description {
-  background-color: rgba(3, 14, 18, 0.4);
-  color: white;
-  text-shadow: 1px 1px 1px black;
+.gallery-container .galleryImage {
+  border: 10px solid black;
 }
 
 * {

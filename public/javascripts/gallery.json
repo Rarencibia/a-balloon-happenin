@@ -1,11 +1,38 @@
 {
-    "gallery": [
-        {"name": "4th Of July Party", "img": "../images/americanFlag.jpg", "description": "A little display to spice things up for pictures at a 4th of July party."},
-        {"name": "Costume Party", "img": "../images/brooklyn.jpg", "description": "Whether it's a costume party or halloween party, 'A Balloon Happenin' has you covered!"},
-        {"name": "Retirement Party", "img": "../images/champagneClose.jpg", "description": "Nothing like a tall glass of champagne to celebrate your lifetime accomplishments!"},
-        {"name": "This One's for America", "img": "../images/circleFlag1.jpg", "description": "A display made to honor our nations birthday!"},
-        {"name": "Frozen Theme Party", "img": "../images/frozen.jpg", "description": "Kid's birthday theme party."},
-        {"name": "Engagement Party", "img": "../images/moon1.jpg", "description": "A perfect backsplash for pictures are a party to remember!"},
-        {"name": "Honor Someone You Love", "img": "../images/pillarClose.jpg", "description": "Honor the ones you love with one of our party displays."},
-    ]
+	"gallery": [{
+			"name": "4th Of July Party",
+			"img": "../images/americanFlag.jpg",
+			"description": "A little display to spice things up for pictures at a 4th of July party."
+		},
+		{
+			"name": "Costume Party",
+			"img": "../images/brooklyn.jpg",
+			"description": "Whether it's a costume party or halloween party, 'A Balloon Happenin' has you covered!"
+		},
+		{
+			"name": "Retirement Party",
+			"img": "../images/champagneClose.jpg",
+			"description": "Nothing like a tall glass of champagne to celebrate your lifetime accomplishments!"
+		},
+		{
+			"name": "This One's for America",
+			"img": "../images/circleFlag1.jpg",
+			"description": "A display made to honor our nations birthday!"
+		},
+		{
+			"name": "Frozen Theme Party",
+			"img": "../images/frozen.jpg",
+			"description": "Kid's birthday theme party."
+		},
+		{
+			"name": "Engagement Party",
+			"img": "../images/moon1.jpg",
+			"description": "A perfect backsplash for pictures are a party to remember!"
+		},
+		{
+			"name": "Honor Someone You Love",
+			"img": "../images/pillarClose.jpg",
+			"description": "Honor the ones you love with one of our party displays."
+		}
+	]
 }

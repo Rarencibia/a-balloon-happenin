@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,UAAU,CAAV,MAAU;EACN,EAAE;IACE,SAAS,EAAE,iBAAiB;;EAEhC,GAAG;IACC,SAAS,EAAE,iBAAiB",
     "sources": [
-        "../sass/keyframes.scss"
+        "../keyframes.scss"
     ],
     "names": [],
     "file": "keyframes.css"

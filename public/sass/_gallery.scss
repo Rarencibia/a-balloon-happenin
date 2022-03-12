@@ -1,0 +1,48 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-image: url("../images/servicesImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-blue;
+    background-blend-mode: soft-light;
+    
+
+    
+    
+    
+
+
+    .gallery-wrapper {
+     
+        text-align: center;
+        box-shadow: 3px 3px 3px $color-black;
+        border-top: 3px black solid;
+        border-left: 3px black solid;
+        padding: 30px;
+    }
+
+    .gallery-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        outline: 3px $color-pink solid;
+    }
+
+    .gallery-name {
+        color: $color-white;
+        text-shadow: 2px 2px 2px $color-black;
+        padding: 10px;
+
+    }
+
+    .gallery-description {
+        background-color: rgba(3,14,18, .4);
+        color: white;
+        text-shadow: 1px 1px 1px black;
+
+    }
+}

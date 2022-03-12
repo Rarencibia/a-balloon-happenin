@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,KAAK,EAAE,IAAI;CAed;;AAhBD,AAII,kBAJc,CAId,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,kBAAkB,EAAE,cAAc;EAClC,eAAe,EAAE,KAAK;EACtB,YAAY,EAAE,IAAI;CAErB;;AAXL,AAaI,kBAbc,CAad,aAAa,CAAC;EACV,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "../public/sass/gallery.scss"
+    ],
+    "names": [],
+    "file": "gallery.css"
+}
