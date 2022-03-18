@@ -486,10 +486,10 @@ main .moon-image {
 .gallery-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-image: url("../images/servicesImg.jpg");
@@ -514,6 +514,8 @@ main .moon-image {
   -o-object-fit: cover;
      object-fit: cover;
   outline: 3px #EB52DF solid;
+  -webkit-box-shadow: 3px 3px 10px #030e12;
+          box-shadow: 3px 3px 10px #030e12;
 }
 
 .gallery-container .gallery-name {

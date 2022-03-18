@@ -1,7 +1,7 @@
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-image: url("../images/servicesImg.jpg");
@@ -17,7 +17,6 @@
 
 
     .gallery-wrapper {
-     
         text-align: center;
         box-shadow: 3px 3px 3px $color-black;
         border-top: 3px black solid;
@@ -30,6 +29,7 @@
         height: 300px;
         object-fit: cover;
         outline: 3px $color-pink solid;
+        box-shadow: 3px 3px 10px $color-black;
     }
 
     .gallery-name {
