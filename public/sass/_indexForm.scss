@@ -42,7 +42,7 @@
         &:hover {
             @keyframes bounce {
                 0% {
-                    transform: translate(0, 1px);
+                    transform: translate(0, 0px);
                 }
                 50% {
                     transform: translate(0, 6px);
@@ -75,6 +75,27 @@
 
     textarea {
         color: rgba(0, 0, 0, .3);
+    }
+
+    .form-button {
+        width: 100px;
+        font-size: 1rem;
+
+        margin-top: 10px;
+        margin-left: 35%;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        border: 2px solid $color-black;
+        background-color: $color-black;
+        box-shadow: inset 0px 0px 0px 2px $color-pink;
+
+        &:hover {
+            color: $color-yellow;
+            cursor: pointer;
+            // box-shadow: inset 0px 0px 0px 7px $color-pink;
+            background-color: $color-pink;
+        }
     }
 
 
