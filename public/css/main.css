@@ -285,6 +285,7 @@ main {
   /*Start of 3 divs explaining different events the company handles*/
   /*End 3 divs explaination of what the company does*/
   /*Start call to action*/
+  /*Media Queries*/
   /*End call to action*/
   /*Gallery link and call to action.*/
   /*End Object*/
@@ -378,6 +379,37 @@ main .moon-image {
      object-fit: cover;
   -webkit-box-shadow: 3px 3px 3px #030e12;
           box-shadow: 3px 3px 3px #030e12;
+}
+
+@media only screen and (max-width: 1000px) {
+  main .three-product-wrapper {
+    grid-column-gap: 0px !important;
+    width: 100% !important;
+  }
+  main .three-product__containers {
+    border: 1px inset #FFFFFF;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main .three-product-wrapper {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: (1fr)[3] !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    grid-column-gap: 0px !important;
+    grid-row-gap: 0px !important;
+  }
+  main .company-callto-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .company-callto-wrapper .company-callto__text {
+    width: 100%;
+  }
 }
 
 .form-container {

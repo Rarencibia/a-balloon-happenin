@@ -144,6 +144,38 @@ main {
         box-shadow: 3px 3px 3px $color-black;
 
     }
+
+
+    /*Media Queries*/
+    @media only screen and (max-width: 1000px){
+        .three-product-wrapper{
+            grid-column-gap: 0px!important;
+            width: 100%!important;
+        }
+        .three-product__containers {
+            border: 1px inset $color-white;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+        .three-product-wrapper{
+            grid-template-columns: 1fr!important;
+            grid-template-rows: repeat(3, 1fr)!important;
+            grid-column-gap: 0px!important;
+            grid-row-gap: 0px!important;
+        }
+
+        .company-callto-wrapper {
+            flex-direction: column-reverse;
+
+            .company-callto__text{
+                width: 100%;
+            }
+        }
+    }
+
+
     /*End call to action*/
 
 
