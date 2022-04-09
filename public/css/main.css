@@ -35,6 +35,17 @@ nav #logoImage {
           box-shadow: inset 0px 0px 0px 3px #fcde67;
 }
 
+nav .hamburger-Img {
+  display: none;
+}
+
+nav .mobile-options-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+}
+
 nav ul {
   width: 100%;
   display: -webkit-box;
@@ -80,9 +91,48 @@ nav ul li:hover {
 }
 
 /*Media Queries*/
+@media only screen and (max-width: 600px) {
+  .companyLogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navUL {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 3px solid black;
+  }
+  .navLi {
+    display: none;
+  }
+  .companyLogo {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 3px solid black;
+    width: 100%;
+  }
+  .hamburger-Img {
+    display: block !important;
+    width: 100px !important;
+  }
+  .hamburger-Img:hover {
+    cursor: pointer;
+  }
+}
+
 footer {
   position: relative;
-  /*Footer end just for styles only*/
 }
 
 footer .footer-container-logo {
@@ -132,6 +182,7 @@ footer .footer_logo {
   color: white;
   letter-spacing: 3px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 footer .footer-policy-background-color {
@@ -191,14 +242,25 @@ footer .footer-container-policy a {
 
 footer .social-media-container {
   width: 20%;
-  margin-left: 100px;
+  margin-right: 10%;
+  text-align: center;
 }
 
 footer .social-media-container img {
+  margin-left: 10px;
   width: 50px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px #030e12;
+          box-shadow: 5px 5px 5px #030e12;
+  /*Footer end just for styles only*/
 }
 
-footer .footer_end {
+footer .social-media-container img:hover {
+  -webkit-box-shadow: 5px 5px 5px #0636D4;
+          box-shadow: 5px 5px 5px #0636D4;
+}
+
+footer .social-media-container img .footer_end {
   position: absolute;
   width: 100%;
   height: 50px;
@@ -207,7 +269,7 @@ footer .footer_end {
   z-index: 3;
 }
 
-footer .footer-container-policy h3 {
+footer .social-media-container img .footer-container-policy h3 {
   color: black;
 }
 

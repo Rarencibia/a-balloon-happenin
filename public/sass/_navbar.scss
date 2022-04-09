@@ -12,6 +12,17 @@ nav {
         box-shadow: inset 0px 0px 0px 3px $color-yellow;
     }
 
+    .hamburger-Img {
+        display: none;
+    }
+
+    .mobile-options-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+    }
+
     ul {
         width: 100%;
         display: flex;
@@ -56,6 +67,35 @@ nav {
 
 /*Media Queries*/
 
-// nav {
+@media only screen and (max-width: 600px){
+
+    .companyLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navUL{
+        
+        justify-content: flex-start;
+        flex-direction: row;
+        border: 3px solid black;
+    }
+    .navLi {
+        display: none;
+
+    }
     
-// }
+    .companyLogo {
+        justify-content: space-around;
+        border: 3px solid black;
+        width: 100%;
+    }
+
+    .hamburger-Img {
+        display: block!important;
+        width: 100px!important;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

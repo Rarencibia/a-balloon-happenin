@@ -43,6 +43,7 @@ footer {
         color: white;
         letter-spacing: 3px;
         text-transform: capitalize;
+        text-align: center;
     }
 
     .footer-policy-background-color{
@@ -95,12 +96,18 @@ footer {
 
     .social-media-container{
         width: 20%;
-        margin-left: 100px;
+        margin-right: 10%;
+        text-align: center;
     }
 
     .social-media-container img{
+        margin-left: 10px;
         width: 50px;
-    }
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px $color-black;
+        &:hover {
+            box-shadow: 5px 5px 5px $color-dark-blue;
+        }
 
     /*Footer end just for styles only*/
     .footer_end {
@@ -116,5 +123,6 @@ footer {
 
     .footer-container-policy h3{
         color: black;
+    }
     }
 }

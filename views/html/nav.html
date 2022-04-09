@@ -2,13 +2,24 @@
 
 
 
-    <ul class="navUL">
+    <ul class="navUL" id="navUL">
+        <div class="mobile-options-menu" id="mobileOptionsMenu">
+            <ul class="mobile-Nav-Ul">
+                <li class="mobile-Nav-Li"><a href="/">Home</a></li>
+                <li class="mobile-Nav-Li"><a href="/gallery">Gallery</a></li>
+                <li class="mobile-Nav-Li"><a href="/aboutus">About Us</a></li>
+                <li class="mobile-Nav-Li"><a name="bookNowSection" href="./#bookNowSection">Book Us</a></li>
+            </ul>
+        </div>
         <li class="navLi"><a href="/">Home</a></li>
         <li class="navLi"><a href="/gallery">Gallery</a></li>
         <div class="companyLogo">
             <img id="logoImage" src="../images/logo.jpeg" alt="A Balloon Happenin">
+            <img src="../images/hamburger.png" alt="Options Menu" class="hamburger-Img" id="hamburgerButton">
         </div>  
         <li class="navLi"><a href="/aboutus">About Us</a></li>
         <li class="navLi"><a name="bookNowSection" href="./#bookNowSection">Book Us</a></li>
     </ul>
 </nav>
+
+<script src="javascripts/navResize.js"></script>
