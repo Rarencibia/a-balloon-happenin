@@ -502,8 +502,13 @@ main .moon-image {
   }
 }
 
+.form {
+  padding: 100px;
+}
+
 .form-container {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,17 +517,21 @@ main .moon-image {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.form-container form {
   background-image: url("../images/formBackground.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: darken;
+  background-size: cover;
+}
+
+.form-container form {
+  -webkit-backdrop-filter: blur(2px) brightness(45%);
+          backdrop-filter: blur(2px) brightness(45%);
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 80%;
+  width: 65%;
+  height: auto;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,8 +547,6 @@ main .moon-image {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 100px;
-  border: 3px inset #6b38a6;
-  outline: 1px solid #fcde67;
 }
 
 .form-container form h1 {
@@ -550,6 +557,7 @@ main .moon-image {
 }
 
 .form-container .form-text-wrapper {
+  opacity: .85;
   background-color: white;
   padding: 30px;
   -webkit-box-shadow: 3px 3px 3px #030e12;
@@ -615,9 +623,9 @@ main .moon-image {
   color: white;
   border-radius: 5px;
   border: 2px solid #030e12;
-  background-color: #030e12;
-  -webkit-box-shadow: inset 0px 0px 0px 2px #EB52DF;
-          box-shadow: inset 0px 0px 0px 2px #EB52DF;
+  color: #030e12;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 
 .form-container .form-button:hover {
