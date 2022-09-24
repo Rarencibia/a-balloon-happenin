@@ -75,6 +75,8 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        
+
     }
 
     .footer_policy_links a {
@@ -114,6 +116,8 @@ footer {
         width: 20%;
         margin-right: 10%;
         text-align: center;
+        overflow: hidden!important;
+
 
 
         
@@ -123,9 +127,19 @@ footer {
         margin-left: 10px;
         width: 50px;
         border-radius: 15px;
-        box-shadow: 5px 5px 5px $color-black;
+        // box-shadow: 5px 5px 5px $color-black;
+        padding: 10px;
+        transform: scale(1.0) rotate(0deg);
+        transition: all ease-in-out;
+        transition-duration: .3s;
+
         &:hover {
             box-shadow: 5px 5px 5px $color-dark-blue;
+            border: 1px solid black;
+            transform: scale(1.1) rotate(8deg);
+            transition: all ease-in-out;
+            transition-duration: .3s;
+
         }
 
     /*Footer end just for styles only*/

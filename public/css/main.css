@@ -268,20 +268,33 @@ footer .social-media-container {
   width: 20%;
   margin-right: 10%;
   text-align: center;
+  overflow: hidden !important;
 }
 
 footer .social-media-container img {
   margin-left: 10px;
   width: 50px;
   border-radius: 15px;
-  -webkit-box-shadow: 5px 5px 5px #030e12;
-          box-shadow: 5px 5px 5px #030e12;
+  padding: 10px;
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
   /*Footer end just for styles only*/
 }
 
 footer .social-media-container img:hover {
   -webkit-box-shadow: 5px 5px 5px #0636D4;
           box-shadow: 5px 5px 5px #0636D4;
+  border: 1px solid black;
+  -webkit-transform: scale(1.1) rotate(8deg);
+          transform: scale(1.1) rotate(8deg);
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 footer .social-media-container img .footer_end {
