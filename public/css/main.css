@@ -1,4 +1,5 @@
-/*RGB rgb(107, 56, 166)*/
+/*RGB rgb(179, 0, 255)*/
+/*rgb(240, 204, 255)*/
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translate(0px, 0px);
@@ -21,7 +22,7 @@
 }
 
 nav {
-  background-color: #5bccf6;
+  background-color: rgba(179, 0, 255, 0.4);
 }
 
 nav #logoImage {
@@ -30,9 +31,9 @@ nav #logoImage {
   padding: 5px;
   border-radius: 50%;
   opacity: .70;
-  border: 3px solid #6b38a6;
-  -webkit-box-shadow: inset 0px 0px 0px 3px #fcde67;
-          box-shadow: inset 0px 0px 0px 3px #fcde67;
+  border: 3px solid #f0ccff;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #000000;
+          box-shadow: inset 0px 0px 0px 3px #000000;
 }
 
 nav .hamburger-Img {
@@ -59,12 +60,12 @@ nav ul {
 }
 
 nav a {
-  color: black;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #fcde67;
+  color: #b300ff;
 }
 
 nav ul li {
@@ -72,22 +73,31 @@ nav ul li {
   font-size: 2.5rem;
   letter-spacing: 3px;
   font-weight: 900;
-  text-shadow: 1px 1px 1px white;
+  text-shadow: 1px 1px 1px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  flex-direction: column-reverse;
+  padding: 5px;
 }
 
-nav ul li:hover {
-  border-top: 2px solid #6b38a6;
-  text-shadow: 2px 2px 2px #6b38a6;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition: all;
-  transition: all;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+nav ul li::after {
+  content: '';
+  margin: auto;
+  width: 0%;
+}
+
+nav li:hover:after {
+  content: '';
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  width: 95%;
+  height: 1px;
+  background-color: black;
 }
 
 /*Media Queries*/
@@ -139,7 +149,7 @@ footer .footer-container-logo {
   position: relative;
   width: 100%;
   padding: 20px;
-  background-color: rgba(6, 54, 212, 0.5);
+  background-color: rgba(179, 0, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,9 +159,9 @@ footer .footer-container-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 3px 3px 3px #030e12;
-          box-shadow: 3px 3px 3px #030e12;
-  text-shadow: 3px 3px 3px #030e12;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
+  text-shadow: 3px 3px 3px #000000;
 }
 
 footer .footer_color_bar {
@@ -187,7 +197,8 @@ footer .footer_logo {
 footer .footer-policy-background-color {
   position: relative;
   width: 100%;
-  background-color: #0636D4;
+  height: 100px;
+  background-color: rgba(179, 0, 255, 0.5);
   z-index: 1;
   /*Z index change here*/
   overflow: hidden !important;
@@ -198,10 +209,10 @@ footer .footer-container-policy {
   width: 100%;
   height: 100%;
   padding: 10px;
-  background-color: #fcde67;
+  background-color: #AEE615;
   border-end-end-radius: 80%;
-  -webkit-box-shadow: 1px 1px 3px #030e12;
-          box-shadow: 1px 1px 3px #030e12;
+  -webkit-box-shadow: 1px 1px 3px #000000;
+          box-shadow: 1px 1px 3px #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,7 +241,7 @@ footer .footer_policy_links {
 
 footer .footer_policy_links a:hover {
   color: #5bccf6;
-  text-shadow: 1px 1px 1px #030e12;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 footer .footer-container-policy a {
@@ -258,7 +269,8 @@ footer .trademark-container {
 }
 
 footer .trademark {
-  color: #0636D4;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 10px #000000;
   font-size: .60rem;
   text-align: center;
 }
@@ -276,8 +288,8 @@ footer .social-media-container img {
   width: 50px;
   border-radius: 15px;
   padding: 10px;
-  -webkit-transform: scale(1) rotate(0deg);
-          transform: scale(1) rotate(0deg);
+  -webkit-transform: scale(1) rotate(0deg) rotateY(0deg);
+          transform: scale(1) rotate(0deg) rotateY(0deg);
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
   -webkit-transition-duration: .3s;
@@ -286,11 +298,12 @@ footer .social-media-container img {
 }
 
 footer .social-media-container img:hover {
+  cursor: pointer;
   -webkit-box-shadow: 5px 5px 5px #0636D4;
           box-shadow: 5px 5px 5px #0636D4;
   border: 1px solid black;
-  -webkit-transform: scale(1.1) rotate(8deg);
-          transform: scale(1.1) rotate(8deg);
+  -webkit-transform: scale(1.1) rotate(8deg) rotateY(180deg);
+          transform: scale(1.1) rotate(8deg) rotateY(180deg);
   -webkit-transition: all ease-in-out;
   transition: all ease-in-out;
   -webkit-transition-duration: .3s;
@@ -340,7 +353,7 @@ footer .social-media-container img .footer-container-policy h3 {
   color: #FFFFFF;
   text-align: center;
   font-weight: 900;
-  text-shadow: 2px 2px 2px #6b38a6;
+  text-shadow: 2px 2px 2px #b300ff;
   border-radius: 2%;
   gap: 40px;
   position: relative;
@@ -361,8 +374,8 @@ footer .social-media-container img .footer-container-policy h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
-  -webkit-box-shadow: 3px 3px 3px #030e12;
-          box-shadow: 3px 3px 3px #030e12;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
 }
 
 .topIntroWrapper a {
@@ -371,7 +384,7 @@ footer .social-media-container img .footer-container-policy h3 {
 }
 
 .topIntroWrapper a:hover {
-  color: #fcde67;
+  color: #AEE615;
 }
 
 /*Main Image end*/
@@ -406,8 +419,8 @@ main .three-product-wrapper {
 main .three-product__containers {
   padding: 30px;
   background: #5bccf6;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #5bccf6), to(white));
-  background: linear-gradient(0deg, #5bccf6 15%, white 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #f0ccff), to(white));
+  background: linear-gradient(0deg, #f0ccff 15%, white 100%);
 }
 
 main .three-product__text {
@@ -422,7 +435,7 @@ main .three-product__text h1 {
 }
 
 main .three-product__text p {
-  color: #030e12;
+  color: #000000;
   line-height: 2rem;
   letter-spacing: .8 rem;
   text-shadow: 1px 1px 1px #FFFFFF;
@@ -430,7 +443,7 @@ main .three-product__text p {
 
 main .company-callto-wrapper {
   width: 100%;
-  background-color: #5bccf6;
+  background-color: rgba(179, 0, 255, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,8 +457,8 @@ main .company-callto-wrapper {
 
 main .company-callto__text {
   color: #FFFFFF;
-  text-shadow: 1px 1px 1px #030e12;
-  background-color: rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 1px #000000;
+  background-color: rgba(179, 0, 255, 0.4);
   padding: 20px;
   width: 50%;
   line-height: 40px;
@@ -564,7 +577,7 @@ main .moon-image {
 
 .form-container form h1 {
   color: white;
-  text-shadow: 2px 2px 2px #6b38a6;
+  text-shadow: 2px 2px 2px #b300ff;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -573,10 +586,10 @@ main .moon-image {
   opacity: .85;
   background-color: white;
   padding: 30px;
-  -webkit-box-shadow: 3px 3px 3px #030e12;
-          box-shadow: 3px 3px 3px #030e12;
-  border-left: inset 1px #030e12;
-  border-top: inset 1px #030e12;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
+  border-left: inset 1px #000000;
+  border-top: inset 1px #000000;
   -webkit-animation: bounce 1.5s ease-in-out infinite;
           animation: bounce 1.5s ease-in-out infinite;
 }
@@ -593,9 +606,9 @@ main .moon-image {
 }
 
 .form-container .form-text {
-  background-color: #EB52DF;
+  background-color: #b300ff;
   color: white;
-  text-shadow: 1px 1px 1px #030e12;
+  text-shadow: 1px 1px 1px #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,7 +631,7 @@ main .moon-image {
 }
 
 .form-container form input {
-  border-bottom: 1px solid #030e12;
+  border-bottom: 1px solid #000000;
   font-size: 1.2rem;
   border-radius: 5%;
 }
@@ -635,16 +648,16 @@ main .moon-image {
   padding: 10px;
   color: white;
   border-radius: 5px;
-  border: 2px solid #030e12;
-  color: #030e12;
-  -webkit-transition: ease-in-out 1s;
-  transition: ease-in-out 1s;
+  border: 2px solid #000000;
+  color: #000000;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 .form-container .form-button:hover {
-  color: #fcde67;
+  color: #AEE615;
   cursor: pointer;
-  background-color: #EB52DF;
+  background-color: #b300ff;
 }
 
 .gallery-container {
@@ -665,8 +678,8 @@ main .moon-image {
 
 .gallery-container .gallery-wrapper {
   text-align: center;
-  -webkit-box-shadow: 3px 3px 3px #030e12;
-          box-shadow: 3px 3px 3px #030e12;
+  -webkit-box-shadow: 3px 3px 3px #000000;
+          box-shadow: 3px 3px 3px #000000;
   border-top: 3px black solid;
   border-left: 3px black solid;
   padding: 30px;
@@ -678,13 +691,13 @@ main .moon-image {
   -o-object-fit: cover;
      object-fit: cover;
   outline: 5px #FFFFFF solid;
-  -webkit-box-shadow: 3px 3px 10px #030e12;
-          box-shadow: 3px 3px 10px #030e12;
+  -webkit-box-shadow: 3px 3px 10px #000000;
+          box-shadow: 3px 3px 10px #000000;
 }
 
 .gallery-container .gallery-name {
   color: #FFFFFF;
-  text-shadow: 2px 2px 2px #030e12;
+  text-shadow: 2px 2px 2px #000000;
   padding: 10px;
 }
 
@@ -745,7 +758,7 @@ main .moon-image {
 
 .about-us-main .about-us-text h1 {
   text-align: center;
-  text-shadow: 1px 1px 1px #030e12;
+  text-shadow: 1px 1px 1px #000000;
   margin-bottom: 20px;
   text-decoration: underline;
 }

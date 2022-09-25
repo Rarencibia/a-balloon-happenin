@@ -1,5 +1,5 @@
 nav {
-    background-color: $color-blue;
+    background-color: rgba(179, 0, 255, 0.4);
 
 
     #logoImage {
@@ -8,8 +8,8 @@ nav {
         padding: 5px;
         border-radius: 50%;
         opacity: .70;   
-        border: 3px solid $color-purple;
-        box-shadow: inset 0px 0px 0px 3px $color-yellow;
+        border: 3px solid $color-light-purple;
+        box-shadow: inset 0px 0px 0px 3px $color-black  ;
     }
 
     .hamburger-Img {
@@ -32,11 +32,11 @@ nav {
 
 
     a{
-        color: black;
+        color: $color-white;
         text-decoration: none;
 
         &:hover {
-            color: $color-yellow;
+            color: $color-purple;
 
         }
 
@@ -48,16 +48,36 @@ nav {
         font-size: 2.5rem;
         letter-spacing: 3px;
         font-weight: 900;
-        text-shadow: 1px 1px 1px white;
+        text-shadow: 1px 1px 1px $color-black;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 5px;
 
-        &:hover{
-            border-top: 2px solid $color-purple;
-            text-shadow: 2px 2px 2px #6b38a6;
-            transition-property: transform;
-            transition: all;
-            transition-duration: 500ms;
-            transform: scale(1.1);
-        }
+        // &:hover{
+        //     border-top: 2px solid $color-purple;
+        //     text-shadow: 2px 2px 2px #6b38a6;
+        //     transition-property: transform;
+        //     transition: all;
+        //     transition-duration: 500ms;
+        //     transform: scale(1.1);
+        // }
+
+    }
+
+    ul li::after {
+        content: '';
+        margin: auto;
+        width: 0%;
+
+    }   
+
+    li:hover:after {
+        content: '';
+        transition-duration: .5s;
+        width: 95%;
+        height: 1px;
+        background-color: black;
 
     }
 

@@ -61,7 +61,7 @@
     }
 
     .form-text {
-        background-color: $color-pink;
+        background-color: $color-purple;
         color: white;
         text-shadow: 1px 1px 1px $color-black;
         display: flex;
@@ -99,14 +99,14 @@
         color: $color-black;
         // background-color: $color-black;
         // box-shadow: inset 0px 0px 0px 2px $color-pink;
-        transition: ease-in-out 1s;
+        transition: ease-in-out .5s;
 
 
         &:hover {
             color: $color-yellow;
             cursor: pointer;
             // box-shadow: inset 0px 0px 0px 7px $color-pink;
-            background-color: $color-pink;
+            background-color: $color-purple;
             
         }
     }
