@@ -7,11 +7,12 @@
     background-image: url("../images/servicesImg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: $color-blue;
+    background-color: $color-light-purple;
     background-blend-mode: soft-light;
+    padding: 150px;
     
 
-
+}
     
     
     
@@ -45,5 +46,14 @@
         color: white;
         text-shadow: 1px 1px 1px black;
 
+    }
+
+
+
+
+@media only screen and (max-width: 991px){
+    // example
+    .gallery-container{
+        display: block;
     }
 }

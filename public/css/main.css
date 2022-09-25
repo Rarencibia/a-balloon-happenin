@@ -22,7 +22,10 @@
 }
 
 nav {
-  background-color: rgba(179, 0, 255, 0.4);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 nav #logoImage {
@@ -30,7 +33,6 @@ nav #logoImage {
   height: 150px;
   padding: 5px;
   border-radius: 50%;
-  opacity: .70;
   border: 3px solid #f0ccff;
   -webkit-box-shadow: inset 0px 0px 0px 3px #000000;
           box-shadow: inset 0px 0px 0px 3px #000000;
@@ -97,7 +99,7 @@ nav li:hover:after {
           transition-duration: .5s;
   width: 95%;
   height: 1px;
-  background-color: black;
+  background-color: #AEE615;
 }
 
 /*Media Queries*/
@@ -326,7 +328,7 @@ footer .social-media-container img .footer-container-policy h3 {
 /*Main image and introductory text the user will first see below the navbar*/
 .topIntroWrapper {
   width: 100%;
-  height: 500px;
+  height: 700px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,6 +351,7 @@ footer .social-media-container img .footer-container-policy h3 {
 }
 
 .topIntroWrapper .introSellWrapper {
+  margin-top: 200px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   text-align: center;
@@ -358,7 +361,6 @@ footer .social-media-container img .footer-container-policy h3 {
   gap: 40px;
   position: relative;
   font-size: 1rem;
-  height: 50%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,7 +375,7 @@ footer .social-media-container img .footer-container-policy h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px;
+  padding: 30px;
   -webkit-box-shadow: 3px 3px 3px #000000;
           box-shadow: 3px 3px 3px #000000;
 }
@@ -497,8 +499,9 @@ main .moon-image {
   border: 10px solid #FFFFFF;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   main .three-product-wrapper {
+    display: block;
     grid-column-gap: 0px !important;
     width: 100% !important;
   }
@@ -660,6 +663,18 @@ main .moon-image {
   background-color: #b300ff;
 }
 
+@media only screen and (max-width: 992px) {
+  .form {
+    margin-top: 100px;
+    padding: 0px;
+    width: 100%;
+  }
+  .form-container {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
 .gallery-container {
   display: -ms-grid;
   display: grid;
@@ -672,11 +687,12 @@ main .moon-image {
   background-image: url("../images/servicesImg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #5bccf6;
+  background-color: #f0ccff;
   background-blend-mode: soft-light;
+  padding: 150px;
 }
 
-.gallery-container .gallery-wrapper {
+.gallery-wrapper {
   text-align: center;
   -webkit-box-shadow: 3px 3px 3px #000000;
           box-shadow: 3px 3px 3px #000000;
@@ -685,7 +701,7 @@ main .moon-image {
   padding: 30px;
 }
 
-.gallery-container .gallery-image {
+.gallery-image {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
@@ -695,16 +711,22 @@ main .moon-image {
           box-shadow: 3px 3px 10px #000000;
 }
 
-.gallery-container .gallery-name {
+.gallery-name {
   color: #FFFFFF;
   text-shadow: 2px 2px 2px #000000;
   padding: 10px;
 }
 
-.gallery-container .gallery-description {
+.gallery-description {
   background-color: rgba(3, 14, 18, 0.4);
   color: white;
   text-shadow: 1px 1px 1px black;
+}
+
+@media only screen and (max-width: 991px) {
+  .gallery-container {
+    display: block;
+  }
 }
 
 .about-us-main {
@@ -746,6 +768,13 @@ main .moon-image {
   width: 50%;
   width: 300px;
   height: 300px;
+  border-radius: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center right;
+     object-position: center right;
+  border: 2px solid #000000;
+  image-rendering: optimizeQuality;
 }
 
 .about-us-main .about-us-text {
