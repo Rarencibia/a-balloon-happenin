@@ -34,8 +34,8 @@ nav #logoImage {
   padding: 5px;
   border-radius: 50%;
   border: 3px solid #f0ccff;
-  -webkit-box-shadow: inset 0px 0px 0px 3px #000000;
-          box-shadow: inset 0px 0px 0px 3px #000000;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #030e12;
+          box-shadow: inset 0px 0px 0px 3px #030e12;
 }
 
 nav .hamburger-Img {
@@ -75,7 +75,7 @@ nav ul li {
   font-size: 2.5rem;
   letter-spacing: 3px;
   font-weight: 900;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #030e12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,16 +161,14 @@ footer .footer-container-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 3px 3px 3px #000000;
-          box-shadow: 3px 3px 3px #000000;
-  text-shadow: 3px 3px 3px #000000;
+  text-shadow: 3px 3px 3px #030e12;
 }
 
 footer .footer_color_bar {
   position: absolute;
   z-index: 1;
   left: 40%;
-  top: 1%;
+  top: 20%;
   width: 15%;
   height: 50px;
   background-color: rgba(252, 222, 103, 0.2);
@@ -190,7 +188,7 @@ footer .footer_logo {
   z-index: 1;
   font-style: italic;
   font-family: 'Cookie', cursive;
-  color: white;
+  color: #FFFFFF;
   letter-spacing: 3px;
   text-transform: capitalize;
   text-align: center;
@@ -200,30 +198,10 @@ footer .footer-policy-background-color {
   position: relative;
   width: 100%;
   height: 100px;
-  background-color: #000000;
+  background-color: rgba(179, 0, 255, 0.5);
   z-index: 1;
   /*Z index change here*/
   overflow: hidden !important;
-}
-
-footer .footer-container-policy {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background-color: #AEE615;
-  border-end-end-radius: 80%;
-  -webkit-box-shadow: 1px 1px 3px #000000;
-          box-shadow: 1px 1px 3px #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 footer .footer_policy_links {
@@ -243,7 +221,7 @@ footer .footer_policy_links {
 
 footer .footer_policy_links a:hover {
   color: #5bccf6;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #030e12;
 }
 
 footer .footer-container-policy a {
@@ -272,7 +250,7 @@ footer .trademark-container {
 
 footer .trademark {
   color: #FFFFFF;
-  text-shadow: 2px 2px 10px #000000;
+  text-shadow: 2px 2px 10px #030e12;
   font-size: .60rem;
   text-align: center;
 }
@@ -289,7 +267,6 @@ footer .social-media-container {
       -ms-flex-align: center;
           align-items: center;
   width: 20%;
-  margin-right: 10%;
   text-align: center;
   overflow: hidden !important;
 }
@@ -390,8 +367,8 @@ footer .social-media-container img .footer-container-policy h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 30px;
-  -webkit-box-shadow: 3px 3px 3px #000000;
-          box-shadow: 3px 3px 3px #000000;
+  -webkit-box-shadow: 3px 3px 3px #030e12;
+          box-shadow: 3px 3px 3px #030e12;
 }
 
 .topIntroWrapper a {
@@ -451,7 +428,7 @@ main .three-product__text h1 {
 }
 
 main .three-product__text p {
-  color: #000000;
+  color: #030e12;
   line-height: 2rem;
   letter-spacing: .8 rem;
   text-shadow: 1px 1px 1px #FFFFFF;
@@ -473,7 +450,7 @@ main .company-callto-wrapper {
 
 main .company-callto__text {
   color: #FFFFFF;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #030e12;
   background-color: rgba(179, 0, 255, 0.4);
   padding: 20px;
   width: 50%;
@@ -603,10 +580,10 @@ main .moon-image {
   opacity: .85;
   background-color: white;
   padding: 30px;
-  -webkit-box-shadow: 3px 3px 3px #000000;
-          box-shadow: 3px 3px 3px #000000;
-  border-left: inset 1px #000000;
-  border-top: inset 1px #000000;
+  -webkit-box-shadow: 3px 3px 3px #030e12;
+          box-shadow: 3px 3px 3px #030e12;
+  border-left: inset 1px #030e12;
+  border-top: inset 1px #030e12;
   -webkit-animation: bounce 1.5s ease-in-out infinite;
           animation: bounce 1.5s ease-in-out infinite;
 }
@@ -625,7 +602,7 @@ main .moon-image {
 .form-container .form-text {
   background-color: #b300ff;
   color: white;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #030e12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +625,7 @@ main .moon-image {
 }
 
 .form-container form input {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #030e12;
   font-size: 1.2rem;
   border-radius: 5%;
 }
@@ -665,8 +642,8 @@ main .moon-image {
   padding: 10px;
   color: white;
   border-radius: 5px;
-  border: 2px solid #000000;
-  color: #000000;
+  border: 2px solid #030e12;
+  color: #030e12;
   -webkit-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
 }
@@ -708,8 +685,8 @@ main .moon-image {
 
 .gallery-wrapper {
   text-align: center;
-  -webkit-box-shadow: 3px 3px 3px #000000;
-          box-shadow: 3px 3px 3px #000000;
+  -webkit-box-shadow: 3px 3px 3px #030e12;
+          box-shadow: 3px 3px 3px #030e12;
   border-top: 3px black solid;
   border-left: 3px black solid;
   padding: 30px;
@@ -721,13 +698,13 @@ main .moon-image {
   -o-object-fit: cover;
      object-fit: cover;
   outline: 5px #FFFFFF solid;
-  -webkit-box-shadow: 3px 3px 10px #000000;
-          box-shadow: 3px 3px 10px #000000;
+  -webkit-box-shadow: 3px 3px 10px #030e12;
+          box-shadow: 3px 3px 10px #030e12;
 }
 
 .gallery-name {
   color: #FFFFFF;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 2px 2px 2px #030e12;
   padding: 10px;
 }
 
@@ -787,7 +764,7 @@ main .moon-image {
      object-fit: cover;
   -o-object-position: center right;
      object-position: center right;
-  border: 2px solid #000000;
+  border: 2px solid #030e12;
   image-rendering: optimizeQuality;
 }
 
@@ -801,7 +778,7 @@ main .moon-image {
 
 .about-us-main .about-us-text h1 {
   text-align: center;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 1px #030e12;
   margin-bottom: 20px;
   text-decoration: underline;
 }
