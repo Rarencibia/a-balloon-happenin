@@ -11,7 +11,7 @@
 		},
 		{
 			"name": "Retirement Party",
-			"img": "../images/champagneClose.jpg",
+			"img": "../images/champagneClose.JPG",
 			"description": "Nothing like a tall glass of champagne to celebrate your lifetime accomplishments!"
 		},
 		{
@@ -21,7 +21,7 @@
 		},
 		{
 			"name": "Frozen Theme Party",
-			"img": "../images/frozen.jpg",
+			"img": "../images/frozen.JPG",
 			"description": "Kid's birthday theme party."
 		},
 		{
@@ -31,7 +31,7 @@
 		},
 		{
 			"name": "Honor Someone You Love",
-			"img": "../images/pillarClose.jpg",
+			"img": "../images/pillarClose.JPG",
 			"description": "Honor the ones you love with one of our party displays."
 		}
 	]
